@@ -192,6 +192,7 @@ if(isset($_POST[$row['forms']]))
 {   
 
     $name= $row['forms'] ;
+	$_SESSION['admin']=$usernamed;
      $_SESSION['formname']= $row['forms'];
      header("location: borm.php?ID=$name");
    
